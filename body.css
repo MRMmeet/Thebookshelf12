@@ -1,0 +1,423 @@
+
+body{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.1)),
+	url("https://cdn.pixabay.com/photo/2016/01/27/04/32/books-1163695_1280.jpg") ;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 95vh;
+	height: 100vh;
+	animation: offers_ani;
+	animation-duration: 10s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    transition: ease-in-out;
+
+}
+.{
+margin: 0 ;
+padding: 0;
+}
+
+
+
+.text-design{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+ font-size: 25px;
+ color: white;
+ text-transform: uppercase;
+}
+.text-design-sub1{
+display: block;
+font-size: 30px;
+font-weight: 250;
+letter-spacing: 25px;
+animation-name: text-animation1;
+animation-duration: 1s;
+animation-timing-function: ease-out;
+}
+.text-design-sub2{
+padding: 10px;
+display: block;
+font-family: Cursive;
+font-size: 20px;
+font-weight: 250;
+letter-spacing: 12px;
+
+animation-name: text-animation2;
+animation-duration: 1s;
+animation-timing-function: ease-out;
+}
+
+.flex-box{
+width: 50vh;
+height: 100vh;
+text-align: center;
+
+
+}
+
+@keyframes text-animation1{
+	0%{
+transform: translate(0, -100px);
+font-size: 10px;
+font-weight: 250;
+letter-spacing: 5px;
+
+
+	}
+	100%{
+transform: translate(0, 10px)
+	}
+}
+
+@keyframes text-animation2{
+	0%{
+transform: translate(-300px, 0);
+font-size: 40px;
+font-weight: 250;
+letter-spacing: 5px;
+
+
+	}
+	100%{
+transform: translate(0, 10px)
+	}
+}
+
+.buton:link, .buton:visited{
+	font-size : 15px;
+	padding: 5px;
+   text-decoration: none;
+   background-color: white;
+   border-radius: 20px;
+   text-align: center;
+   margin: 14px;
+   color: black;
+
+}
+.buton:hover{
+	font-size : 18px;
+	padding: 8px;
+
+}
+@keyframes offers_ani {
+0%,100%{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.1)),
+	url("https://cdn.pixabay.com/photo/2016/01/27/04/32/books-1163695_1280.jpg") ;
+
+
+}
+25%{
+ background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.1)),
+	url("https://www.shutterstock.com/image-vector/promo-sale-banner-library-bookshop-260nw-1790872166.jpg") ;
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+50%{
+background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.1)),
+	url("https://i0.wp.com/indiacurrents.com/wp-content/uploads/2021/04/Covers-20.jpg?fit=785%2C515&ssl=1.png") ;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+
+}
+75%{
+
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.1)),
+	url('https://media.istockphoto.com/id/1219719997/vector/online-library-and-media-books-archive-landing-page-template-tiny-people-characters-at-huge.jpg?s=612x612&w=0&k=20&c=wwfWV1plWoGGXPKniUvwMnZzSDp4bcWdTYH7IyfQi4E=');
+	background-size: 100% 100%;
+
+}
+
+}
+.animation-off    {
+
+ text-transform: uppercase;
+ animation-name:  offers_ani;
+ animation-duration: 10s;
+
+
+}
+
+  /* Navigation Bar Styles */
+  .navbar {
+  	margin-right: 10px;
+    background-color: red;
+    overflow: hidden;
+transform: translate(0, 0);
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    position: absolute;
+
+
+  }
+  
+  .navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  li{
+  	float: left;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .Bg{
+	top: 20px;
+width: 1500px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+background-color: #E3C992 ;
+margin-top: 25px;
+background-size: cover;
+position: relative;
+
+}
+.title-name{
+
+	transform: translate(60%, 50px);
+	padding: 25px;
+	margin: 25px;
+  text-decoration: none;
+  font-size: 50px;
+  font-weight: 200;
+  background-color: #E3D4B5 ;
+  border-radius: 20px;
+  position: absolute;
+
+}
+h1{ 
+	margin-bottom: 20px;
+	position: absolute;
+	text-align: center;
+}
+
+div.Cover-page{
+
+width: 250px;
+margin-right:35px ;
+margin-left: 35px;
+text-align: center;
+margin-top: 100px;
+border: 3px solid red;
+padding: 20px;
+border-radius: 0;
+transition: width 1.5s, height 1.5s ,margin-right 1.5s ,margin-left 1.5s ,margin-top 1.5s , border 1.5s ,padding 1.5s ,border-radius 1.5s ;
+
+
+}
+div.Cover-page:hover{
+
+width: 270px;
+margin-right:25px ;
+margin-left: 25px;
+text-align: center;
+margin-top: 40px;
+border: 6px solid red;
+padding: 30px;
+background-color: #ECE9E4 ;
+
+}
+div.Cover-page img{
+
+	width: 95%;
+}
+h1{
+	font-family: cursive;
+}
+
+.bname{
+   font-size: 18px;
+   font-family: cursive;
+   font-weight: 200;
+
+}
+.Author{
+	font-size: 15px;
+}
+
+.addbtn{
+float: left;
+top: 90%;
+left: 90%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.Bg3{
+	top: 20px;
+width: 1500px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+background-color: #EBDEF0  ;
+margin-top: 25px;
+background-size: 100%;
+position: relative;
+
+}
+div.cover-page2{
+    position: relative;
+	width: 250px;
+margin-right:150px ;
+margin-left: 50px;
+text-align: center;
+margin-top: 250px;
+border: 3px solid red;
+padding: 20px;
+border-radius: 0;
+}
+div.cover-page2:hover{
+    transform: translate(0, -20px);
+    background-color: white;
+
+}
+div.cover-page2 img{
+    position: relative;
+	width: 95%;
+}
+.heading{   
+	margin-top: 150px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+		background-color: #4E9380 ;
+	position: absolute;
+	text-align: center;
+	
+}
+div.meet{
+	width: 250px;
+	height: 40px;
+        margin-top: 950px;
+		background-color: #4E9380 ;
+	position: absolute;
+	border-radius: 25px;
+}
+h2{ margin:15px; 
+	text-align: center;
+}
+h3{
+	margin:10px; 
+	text-align: center;
+}
+div.cover-page2-1{
+    position: relative;
+	width: 250px;
+margin-right:150px ;
+margin-left: 50px;
+text-align: center;
+margin-top: 250px;
+border: 3px solid red;
+padding: 20px;
+border-radius: 0;
+}
+div.cover-page2-1:hover{
+    transform: translate(0, -20px);
+    background-color: yellow;
+
+}
+div.cover-page2-1 img{
+    position: relative;
+	width: 95%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Bg4{
+	top: 20px;
+width: 1500px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+background-color: #C2CEC6   ;
+margin-top: 25px;
+background-size: 100%;
+position: relative;
+
+}
+div.cover-page3 img{
+    position: relative;
+	width: 25%;
+	height: 30%;
+}
+div.cover-page3{
+    position: relative;
+	width: 250px;
+margin-right:150px ;
+margin-left: 50px;
+text-align: center;
+margin-top: 250px;
+border: 3px solid red;
+padding: 20px;
+border-radius: 0;
+}
+div.meet3{
+    position: absolute;
+    float: left;
+	width: 250px;
+margin-right:150px ;
+margin-left: 50px;
+text-align: center;
+margin-top: 250px;
+border: 3px solid red;
+padding: 20px;
+border-radius: 0;
+background-color:#FAD7A0  ;
+}
+div.meet3 img{
+    position: relative;
+	width: 25%;
+	height: 30%;
+}
